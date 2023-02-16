@@ -1,0 +1,357 @@
+.filter-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 4;
+}
+.filter-overlay .filter-pane {
+  background-color: #000;
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  z-index: 5;
+}
+.filter-overlay .filter-pane .filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.65);
+  padding-block: 1.5rem;
+}
+.filter-overlay .filter-pane .filter-header h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.filter-overlay .filter-pane .filter-pane-cancel-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-overlay .filter-pane .filter-pane-cancel-icon img {
+  height: 30px;
+  margin-right: -7px;
+  cursor: pointer;
+}
+.filter-overlay .filter-pane .filter-price {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.65);
+  padding-block: 1.5rem;
+}
+.filter-overlay .filter-pane .filter-price h5 {
+  font-family: "Avenir-Medium", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.filter-overlay .filter-pane .filter-price .wrapper {
+  width: 100%;
+  background: transparent;
+  border-radius: 10px;
+  padding-bottom: 2.5rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+.filter-overlay .filter-pane .filter-price .price-input {
+  width: 100%;
+  display: flex;
+  margin: 20px 0 35px;
+}
+.filter-overlay .filter-pane .filter-price .price-input .field {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 10px;
+}
+.filter-overlay .filter-pane .filter-price .price-input .field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: right;
+  border: none;
+  -moz-appearance: textfield;
+}
+.filter-overlay .filter-pane .filter-price .price-input .field input:focus {
+  border: none;
+}
+.filter-overlay .filter-pane .filter-price .price-input .field span {
+  color: #000;
+}
+.filter-overlay .filter-pane .filter-price .price-input .separator {
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.filter-overlay
+  .filter-pane
+  .filter-price
+  input[type="number"]::-webkit-outer-spin-button,
+.filter-overlay
+  .filter-pane
+  .filter-price
+  input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.filter-overlay .filter-pane .filter-price .slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.filter-overlay .filter-pane .filter-price .slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: crimson;
+}
+.filter-overlay .filter-pane .filter-price .range-input {
+  position: relative;
+}
+.filter-overlay .filter-pane .filter-price .range-input input {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.filter-overlay
+  .filter-pane
+  .filter-price
+  input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #fff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.filter-overlay
+  .filter-pane
+  .filter-price
+  input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.filter-overlay .filter-pane .filter-category {
+  padding-block: 1.5rem;
+}
+.filter-overlay .filter-pane .filter-category h5 {
+  letter-spacing: 1px;
+  font-family: "Avenir-Medium", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.filter-overlay .filter-pane .filter-category ul.filter-category-options li {
+  font-family: "Avenir-Medium", sans-serif;
+  color: #fff;
+}
+.filter-overlay
+  .filter-pane
+  .filter-category
+  ul.filter-category-options
+  li
+  span {
+  margin-right: 5px;
+  transition: all 1s;
+}
+.filter-overlay .filter-pane button.filter-result {
+  font-family: "Avenir-Medium", sans-serif;
+  margin-top: 3.5rem;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+section#search {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+section#search h1 {
+  letter-spacing: 3.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section#search p {
+  text-align: center;
+}
+section#search .searchsortbar {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  margin: 2.5rem 0 3.5rem 0;
+  margin-left: auto;
+}
+section#search .searchsortbar .adjustment-wrapper {
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+}
+section#search .searchsortbar .adjustment-wrapper button {
+  border-radius: 0;
+  width: 50%;
+  color: #333;
+  border: none;
+  border: 1px solid transparent;
+  border-left: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px 12px;
+  font-size: 13.5px;
+}
+section#search .searchsortbar .adjustment-wrapper button:hover,
+section#search .searchsortbar .adjustment-wrapper button:focus {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+section#search .searchsortbar .adjustment-wrapper select {
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  letter-spacing: 1px;
+  width: 50%;
+  display: block;
+  padding: 15px 12px;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border: 1px solid transparent;
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  appearance: none;
+  transition: all 0.5s;
+  /* Replace Default Select Styling (arrow) */
+}
+section#search .searchsortbar .adjustment-wrapper select:hover,
+section#search .searchsortbar .adjustment-wrapper select:focus {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+section#search .searchsortbar .adjustment-wrapper select option {
+  background-color: #fff;
+}
+section#search .search-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section#search .search-grid .result-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5rem;
+  column-gap: 4.5rem;
+}
+section#search .search-grid .result-grid a.result-card {
+  height: 30vw;
+}
+section#search .search-grid .result-grid a.result-card .card-image {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+section#search .search-grid .result-grid a.result-card .card-image img {
+  display: block;
+  max-width: 100%;
+  object-position: center center;
+  object-fit: contain;
+  height: 20vw;
+}
+section#search .search-grid .result-grid a.result-card .card-content {
+  height: 40%;
+}
+section#search
+  .search-grid
+  .result-grid
+  a.result-card
+  .card-content
+  h4.card-title {
+  text-align: center;
+}
+section#search
+  .search-grid
+  .result-grid
+  a.result-card
+  .card-content
+  p.card-price {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 920px) {
+  section#search .search-grid .result-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  section#search .searchsortbar .adjustment-wrapper {
+    width: 100%;
+  }
+  section#search .searchsortbar .adjustment-wrapper button {
+    border-left: none;
+  }
+  section#search .search-grid .result-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#search .search-grid .result-grid a.result-card {
+    height: 40vw;
+  }
+  section#search .search-grid .result-grid a.result-card .card-image {
+    display: block;
+    height: 65%;
+  }
+  section#search .search-grid .result-grid a.result-card .card-image img {
+    height: 100%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .filter-overlay .filter-pane {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .filter-overlay .filter-pane {
+    width: 100vw;
+  }
+  section#search .search-grid .result-grid {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  section#search .search-grid .result-grid a.result-card {
+    height: 50vw;
+  }
+  section#search .search-grid .result-grid a.result-card .card-image {
+    height: 80%;
+  }
+  section#search .search-grid .result-grid a.result-card .card-content {
+    height: 20%;
+  }
+}

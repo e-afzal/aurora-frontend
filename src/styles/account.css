@@ -1,0 +1,119 @@
+.account-container {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.account-container a {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.account-container h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.account-container .account-grid {
+  display: grid;
+  grid-template-columns: 75% 20%;
+  column-gap: 4.5rem;
+  margin-top: 5rem;
+}
+.account-container .account-grid section#orders table {
+  width: 100%;
+}
+.account-container .account-grid section#orders table tr th {
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  font-weight: 100;
+  min-width: max-content;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+.account-container .account-grid section#orders table tr th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.account-container .account-grid section#orders table tr th:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+.account-container .account-grid section#orders table tr td {
+  font-family: "Avenir-Medium", sans-serif;
+  padding-inline: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  font-size: clamp(1.3rem, 2vw, 1.45rem);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.75px;
+  min-width: max-content;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.account-container .account-grid section#orders table tr td:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.account-container .account-grid section#orders table tr td:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+.account-container .account-grid section#orders table tr td a {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.45rem);
+  margin-bottom: 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #000;
+}
+.account-container .account-grid section#address h4 {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.4rem, 2vw, 1.5rem);
+}
+.account-container .account-grid section#address p {
+  margin-top: 0;
+  text-align: left;
+  font-size: clamp(1.3rem, 2vw, 1.45rem);
+}
+.account-container .account-grid section#address button {
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 1.5rem 1.8rem;
+}
+.account-container .account-grid section#address button a {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 815px) {
+  .account-container .account-grid {
+    grid-template-columns: 1fr;
+  }
+  .account-container .account-grid section#orders {
+    margin-bottom: 4.5rem;
+  }
+  .account-container .account-grid section#address {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .account-container .account-grid section#orders {
+    max-height: 300px;
+    overflow: scroll;
+  }
+  .account-container .account-grid section#address {
+    width: 90%;
+  }
+  .account-container .account-grid section#address button {
+    width: 65%;
+  }
+}

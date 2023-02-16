@@ -1,0 +1,90 @@
+section.login-grid {
+  max-width: 1366px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.login-grid .login-title {
+  align-self: center;
+}
+section.login-grid .login-title h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section.login-grid .login-container form.login-form {
+  width: 75%;
+  margin-inline: auto;
+}
+section.login-grid .login-container form.login-form .email-group,
+section.login-grid .login-container form.login-form .password-group {
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+section.login-grid .login-container form.login-form .email-group input:focus,
+section.login-grid
+  .login-container
+  form.login-form
+  .password-group
+  input:focus {
+  border: 1px solid rgba(51, 51, 51, 0.25);
+}
+section.login-grid
+  .login-container
+  form.login-form
+  .password-group
+  .password-container {
+  display: flex;
+  border: 1px solid rgba(51, 51, 51, 0.25);
+  border-radius: 2.5px;
+  width: 100%;
+}
+section.login-grid
+  .login-container
+  form.login-form
+  .password-group
+  .password-container
+  input {
+  border: none;
+}
+section.login-grid
+  .login-container
+  form.login-form
+  .password-group
+  .password-container
+  button {
+  background-color: transparent;
+  padding: 0;
+  text-align: left;
+  padding-right: 1rem;
+  color: #151515;
+  width: auto;
+  text-transform: capitalize;
+  line-height: 1.4;
+  padding-block: 0.5rem;
+}
+section.login-grid .login-container form.login-form p.form-subtitle {
+  margin-bottom: 1rem;
+}
+section.login-grid .login-container form.login-form input#email,
+section.login-grid .login-container form.login-form input#password {
+  width: 100%;
+}
+section.login-grid .login-container p.create-account {
+  text-align: center;
+}
+section.login-grid .login-container p.create-account a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 810px) {
+  section.login-grid {
+    grid-template-columns: 1fr;
+  }
+  section.login-grid .login-container {
+    margin-top: 2rem;
+  }
+  section.login-grid .login-container form.login-form {
+    width: 95%;
+  }
+}

@@ -1,0 +1,46 @@
+section.signup-grid {
+  max-width: 1366px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.signup-grid .signup-title {
+  align-self: center;
+}
+section.signup-grid .signup-title h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section.signup-grid .signup-container form.signup-form {
+  width: 75%;
+  margin-inline: auto;
+}
+section.signup-grid .signup-container form.signup-form .fName-group,
+section.signup-grid .signup-container form.signup-form .lName-group,
+section.signup-grid .signup-container form.signup-form .email-group,
+section.signup-grid .signup-container form.signup-form .password-group {
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+section.signup-grid .signup-container form.signup-form p.form-subtitle {
+  margin-bottom: 1rem;
+}
+section.signup-grid .signup-container form.signup-form input#fName,
+section.signup-grid .signup-container form.signup-form input#lName,
+section.signup-grid .signup-container form.signup-form input#email,
+section.signup-grid .signup-container form.signup-form input#password {
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  section.signup-grid {
+    grid-template-columns: 1fr;
+  }
+  section.signup-grid .signup-container {
+    margin-top: 2rem;
+  }
+  section.signup-grid .signup-container form.signup-form {
+    width: 80%;
+  }
+}

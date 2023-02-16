@@ -1,0 +1,56 @@
+section.collections {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+}
+section.collections h1.collections-title {
+  text-transform: uppercase;
+  font-family: "Avenir-Medium", sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 2.8rem;
+  margin-bottom: 3.5rem;
+}
+section.collections .collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+section.collections .collections-grid a.collections-card {
+  height: 500px;
+  border-radius: 1rem;
+  background-image: url("/public/images/homepage/aurora-showcase-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 2s;
+}
+section.collections .collections-grid a.collections-card:nth-child(2) {
+  background-image: url("/public/images/homepage/collections/daria.webp");
+}
+section.collections .collections-grid a.collections-card:nth-child(3) {
+  background-image: url("/public/images/homepage/collections/random.webp");
+}
+section.collections
+  .collections-grid
+  a.collections-card
+  .collection-card-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  transition: all 2s;
+}
+section.collections
+  .collections-grid
+  a.collections-card:hover
+  .collection-card-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 700px) {
+  section.collections .collections-grid a.collections-card {
+    height: 450px;
+  }
+}

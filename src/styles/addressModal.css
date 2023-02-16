@@ -1,0 +1,30 @@
+.modal .modal-content select#country {
+  width: 75%;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.5s;
+  /* Replace Default Select Styling (arrow) */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+
+.modal .modal-content select#country:hover,
+.modal .modal-content select#country:hover {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+
+.modal .modal-content select#country option {
+  background-color: #fff;
+}

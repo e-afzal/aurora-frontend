@@ -1,0 +1,519 @@
+.details-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  padding-block: 5rem;
+}
+.details-container a {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.details-container h4 {
+  font-size: clamp(3rem, 5vw, 3.2rem);
+  text-transform: uppercase;
+}
+.details-container p {
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+.details-container .details-grid {
+  display: grid;
+  grid-template-columns: 75% 20%;
+  column-gap: 4rem;
+  row-gap: 5rem;
+  margin-top: 5rem;
+}
+.details-container .details-grid section#product-details table {
+  width: 100%;
+}
+.details-container .details-grid section#product-details table tr th {
+  min-width: max-content;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  font-weight: 100;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  th:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+.details-container .details-grid section#product-details table tr td {
+  font-family: "Avenir-Medium", sans-serif;
+  padding-inline: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.75px;
+  min-width: max-content;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td.product-details {
+  display: flex;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td.product-details
+  .product-image {
+  height: 100px;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td.product-details
+  .product-image
+  img {
+  height: 100%;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td.product-details
+  .product-detail {
+  margin-block: auto;
+}
+.details-container
+  .details-grid
+  section#product-details
+  table
+  tr
+  td.product-details
+  .product-detail
+  p {
+  margin-top: 0;
+}
+.details-container .details-grid section#product-details .calculation-grid {
+  margin-top: 3.5rem;
+  width: 35%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.details-container .details-grid section#product-details .calculation-grid h4,
+.details-container .details-grid section#product-details .calculation-grid p {
+  font-family: "Avenir-Medium", sans-serif;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+}
+.details-container
+  .details-grid
+  section#product-details
+  .calculation-grid
+  h4.subtotal-amount,
+.details-container
+  .details-grid
+  section#product-details
+  .calculation-grid
+  h4.shipping-amount,
+.details-container
+  .details-grid
+  section#product-details
+  .calculation-grid
+  h4.tax-amount,
+.details-container
+  .details-grid
+  section#product-details
+  .calculation-grid
+  h4.total-amount {
+  margin-top: 0;
+  text-align: right;
+}
+.details-container .details-grid section#address {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.details-container .details-grid section#address h4 {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-block: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  font-weight: 100;
+}
+.details-container .details-grid section#address p {
+  margin-top: 0;
+  text-align: left;
+}
+.details-container .details-grid section#address .billing-address {
+  margin-top: 7rem;
+}
+.details-container .refunds-exchanges {
+  margin-top: 10rem;
+}
+.details-container .refunds-exchanges section#refunds {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  margin-bottom: 10rem;
+}
+.details-container .refunds-exchanges section#refunds .refunds-submit h3 {
+  letter-spacing: 1px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  text-transform: uppercase;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  color: #000;
+}
+.details-container .refunds-exchanges section#refunds .refunds-submit p {
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-submit
+  textarea#refund-request {
+  margin-block: 2rem;
+  width: 100%;
+  resize: vertical;
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+}
+.details-container .refunds-exchanges section#refunds .refunds-submit button {
+  background-color: #000;
+}
+.details-container .refunds-exchanges section#refunds .refunds-status h3 {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 10px;
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  color: #000;
+}
+.details-container .refunds-exchanges section#refunds .refunds-status table {
+  width: 100%;
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-status
+  table
+  tr
+  th {
+  min-width: max-content;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  font-weight: 100;
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-status
+  table
+  tr
+  th:first-child {
+  text-align: center;
+  padding-left: 0;
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-status
+  table
+  tr
+  th:last-child {
+  text-align: center;
+  padding-right: 0;
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-status
+  table
+  tr
+  td {
+  font-family: "Avenir-Medium", sans-serif;
+  padding-inline: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.75px;
+  min-width: max-content;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-status
+  table
+  tr
+  td:first-child {
+  text-align: center;
+  padding-left: 0;
+}
+.details-container
+  .refunds-exchanges
+  section#refunds
+  .refunds-status
+  table
+  tr
+  td:last-child {
+  text-align: center;
+  padding-right: 0;
+}
+.details-container .refunds-exchanges section#exchange {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+.details-container .refunds-exchanges section#exchange .exchange-submit h3 {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 10px;
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  color: #000;
+}
+.details-container .refunds-exchanges section#exchange .exchange-submit p {
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+}
+.details-container .refunds-exchanges section#exchange .exchange-submit p span {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-submit
+  .form-control {
+  display: inline-block;
+  margin-block: 1.5rem;
+  margin-right: 1.5rem;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-submit
+  .form-control
+  input {
+  accent-color: #0d50ae;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-submit
+  .form-control
+  label {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-submit
+  textarea#exchange-request {
+  margin-block: 2rem;
+  width: 100%;
+  resize: vertical;
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+}
+.details-container .refunds-exchanges section#exchange .exchange-submit button {
+  background-color: #000;
+}
+.details-container .refunds-exchanges section#exchange .exchange-status h3 {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 10px;
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  color: #000;
+}
+.details-container .refunds-exchanges section#exchange .exchange-status table {
+  width: 100%;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-status
+  table
+  tr
+  th {
+  min-width: max-content;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  font-weight: 100;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-status
+  table
+  tr
+  th:first-child {
+  text-align: center;
+  padding-left: 0;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-status
+  table
+  tr
+  th:last-child {
+  text-align: center;
+  padding-right: 0;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-status
+  table
+  tr
+  td {
+  font-family: "Avenir-Medium", sans-serif;
+  padding-inline: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2.3rem;
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.75px;
+  min-width: max-content;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-status
+  table
+  tr
+  td:first-child {
+  text-align: center;
+  padding-left: 0;
+}
+.details-container
+  .refunds-exchanges
+  section#exchange
+  .exchange-status
+  table
+  tr
+  td:last-child {
+  text-align: center;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .details-container .details-grid {
+    grid-template-columns: 1fr;
+  }
+  .details-container .details-grid section#address {
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+  .details-container .details-grid section#address .billing-address {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .details-container .details-grid section#product-details {
+    max-height: 300px;
+    overflow: scroll;
+  }
+  .details-container .details-grid section#product-details .calculation-grid {
+    width: 100%;
+    margin-left: 0;
+  }
+  .details-container .refunds-exchanges section#refunds {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  .details-container .refunds-exchanges section#refunds .refunds-submit button {
+    width: 75%;
+  }
+  .details-container .refunds-exchanges section#exchange {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  .details-container
+    .refunds-exchanges
+    section#exchange
+    .exchange-submit
+    button {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .details-container .details-grid section#address {
+    grid-template-columns: 1fr;
+  }
+  .details-container .details-grid section#address .billing-address {
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,207 @@
+#category-container {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  padding-block: 7rem;
+}
+#category-container .category-image-container {
+  margin-block: 7rem;
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 450px;
+  border-radius: 7px;
+}
+#category-container .category-image-container img.category-image {
+  object-fit: cover;
+}
+#category-container .category-content h2.category-heading {
+  font-size: clamp(3rem, 7vw, 3.7rem);
+  text-transform: capitalize;
+  letter-spacing: 0.55px;
+  text-align: center;
+}
+#category-container .category-content h5.category-caption {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 3px;
+  letter-spacing: 0.55px;
+}
+#category-container .category-content p.category-description {
+  margin-top: 2rem;
+  text-align: center;
+  padding-inline: clamp(1rem, 2vw, 15rem);
+}
+#category-container .filterSortBar {
+  border: 1px solid #ddd;
+  margin: 5rem 0 5rem 0;
+  margin-left: auto;
+}
+#category-container .filterSortBar .adjustment-wrapper {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+#category-container .filterSortBar .adjustment-wrapper button.filter-button {
+  border-radius: 0;
+  width: 25%;
+  color: #fff;
+  border: none;
+  border: 1px solid transparent;
+  border-left: 1px solid #ddd;
+  background-color: #000;
+  padding: 15px 12px;
+  font-size: 13.5px;
+}
+#category-container
+  .filterSortBar
+  .adjustment-wrapper
+  button.filter-button:hover,
+#category-container
+  .filterSortBar
+  .adjustment-wrapper
+  button.filter-button:focus {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+#category-container .filterSortBar .adjustment-wrapper select {
+  font-family: "Brandon_Grotesque-Medium", sans-serif;
+  letter-spacing: 1px;
+  width: 50%;
+  display: block;
+  padding: 15px 12px;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border: 1px solid transparent;
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  appearance: none;
+  transition: all 0.5s;
+  /* Replace Default Select Styling (arrow) */
+}
+#category-container .filterSortBar .adjustment-wrapper select:hover,
+#category-container .filterSortBar .adjustment-wrapper select:focus {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+#category-container .filterSortBar .adjustment-wrapper select option {
+  background-color: #fff;
+}
+#category-container section.results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#category-container section.results-grid .result-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5rem;
+  column-gap: 4.5rem;
+  margin-bottom: 7rem;
+}
+#category-container section.results-grid .result-grid a.result-card {
+  height: 30vw;
+}
+#category-container
+  section.results-grid
+  .result-grid
+  a.result-card
+  .card-image {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#category-container
+  section.results-grid
+  .result-grid
+  a.result-card
+  .card-image
+  img {
+  display: block;
+  max-width: 100%;
+  object-position: center center;
+  object-fit: contain;
+  height: 20vw;
+}
+#category-container
+  section.results-grid
+  .result-grid
+  a.result-card
+  .card-content {
+  height: 40%;
+}
+#category-container
+  section.results-grid
+  .result-grid
+  a.result-card
+  .card-content
+  h4.card-title {
+  text-align: center;
+}
+#category-container
+  section.results-grid
+  .result-grid
+  a.result-card
+  .card-content
+  p.card-price {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 920px) {
+  #collection-container .search-grid .result-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  #collection-container .search-grid .result-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #collection-container .search-grid .result-grid a.result-card {
+    height: 40vw;
+  }
+  #collection-container .search-grid .result-grid a.result-card .card-image {
+    display: block;
+    height: 65%;
+  }
+  #collection-container
+    .search-grid
+    .result-grid
+    a.result-card
+    .card-image
+    img {
+    height: 100%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #collection-container .filterSortBar .adjustment-wrapper {
+    justify-content: flex-start;
+  }
+  #collection-container
+    .filterSortBar
+    .adjustment-wrapper
+    button.filter-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  #collection-container .search-grid .result-grid {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  #collection-container .search-grid .result-grid a.result-card {
+    height: 50vw;
+  }
+  #collection-container .search-grid .result-grid a.result-card .card-image {
+    height: 80%;
+  }
+  #collection-container .search-grid .result-grid a.result-card .card-content {
+    height: 20%;
+  }
+}

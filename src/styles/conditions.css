@@ -1,0 +1,32 @@
+section#conditions {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+}
+section#conditions .condition {
+  margin-bottom: 3rem;
+}
+section#conditions .condition h3 {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+section#conditions .condition p {
+  margin-top: 5px;
+}
+section#conditions .condition p:nth-child(2) {
+  margin-top: 1rem;
+}
+section#conditions .condition p a {
+  font-family: "Avenir-Medium", sans-serif;
+  text-decoration: underline;
+}
+section#conditions .condition ul {
+  padding-left: 3rem;
+}
+section#conditions .condition ul li {
+  list-style: disc;
+  font-size: clamp(1.45rem, 2.7vw, 1.7rem);
+  font-family: "Avenir-Medium", sans-serif;
+  margin-top: 5px;
+}

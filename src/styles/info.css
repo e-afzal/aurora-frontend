@@ -1,0 +1,446 @@
+.info-summary-grid {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  max-width: 1550px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.info-summary-grid .info-container {
+  margin-inline: auto;
+}
+.info-summary-grid .info-container section#information h2 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.info-summary-grid .info-container section#information input {
+  transition: all 0.5s;
+  font-size: 13px;
+}
+.info-summary-grid .info-container section#information input:hover,
+.info-summary-grid .info-container section#information input:focus {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+.info-summary-grid .info-container section#information input::placeholder {
+  font-size: 13px;
+  letter-spacing: -0.2px;
+}
+.info-summary-grid .info-container section#information select {
+  width: 50%;
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.5s;
+  /* Replace Default Select Styling (arrow) */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+.info-summary-grid .info-container section#information select:hover,
+.info-summary-grid .info-container section#information select:focus {
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+.info-summary-grid .info-container section#information select option {
+  background-color: #fff;
+}
+.info-summary-grid .info-container section#information .cart-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1.8vw;
+}
+.info-summary-grid .info-container section#information .cart-links a {
+  font-family: "Avenir-Medium", sans-serif;
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #595959;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  .cart-links
+  a:nth-child(3) {
+  font-weight: 900;
+}
+.info-summary-grid .info-container section#information .cart-links img {
+  height: 1.2rem;
+  padding-inline: 1.5rem;
+}
+.info-summary-grid .info-container section#information section.contact-info {
+  margin-bottom: 3.5rem;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.contact-info
+  .contact-head {
+  margin-bottom: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.contact-info
+  .contact-head
+  h5 {
+  font-size: 1.8rem;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.contact-info
+  .contact-head
+  p {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: 1.35rem;
+  margin-top: 0;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.contact-info
+  .contact-head
+  p
+  a {
+  font-family: "Avenir-Medium", sans-serif;
+  text-decoration: underline;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.contact-info
+  input {
+  width: 100%;
+}
+.info-summary-grid .info-container section#information section.shipping h5 {
+  margin-bottom: 1.7rem;
+  font-size: 1.8rem;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  .country,
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  .name-container,
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  .address,
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  .apartment,
+.info-summary-grid .info-container section#information section.shipping .city,
+.info-summary-grid .info-container section#information section.shipping .phone {
+  margin-bottom: 1.7rem;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: 1.4rem;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .country
+  select {
+  width: 100%;
+  font-size: 1.3rem;
+  font-family: "Avenir-Medium", sans-serif;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .name-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.3rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .address
+  input {
+  width: 100%;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .apartment
+  input {
+  width: 100%;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .city {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.3rem;
+}
+#city {
+  width: 100%;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .city
+  .emirate-label {
+  width: 100%;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .city
+  .emirate-label
+  select {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  font-family: "Avenir-Medium", sans-serif;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  form
+  .phone
+  input {
+  width: 100%;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  .grid-btns {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+}
+.info-summary-grid
+  .info-container
+  section#information
+  section.shipping
+  .grid-btns
+  .return
+  a {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: 1.4rem;
+  color: #595959;
+  text-decoration: underline;
+}
+.info-summary-grid .order-container section#summary h2 {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  padding-top: 5px;
+}
+.info-summary-grid .order-container .product-grid {
+  margin-bottom: 0.7rem;
+  display: grid;
+  grid-template-columns: 25% 55% 20%;
+  align-items: center;
+}
+.info-summary-grid .order-container .product-grid .product-image img {
+  width: 100%;
+}
+.info-summary-grid
+  .order-container
+  .product-grid
+  .product-description
+  p.product-title,
+.info-summary-grid
+  .order-container
+  .product-grid
+  .product-description
+  p.product-size-color {
+  text-align: left;
+  margin-top: 0;
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+.info-summary-grid .order-container .product-grid p.product-price {
+  margin-top: 0;
+  text-align: right;
+}
+.info-summary-grid .order-container .calculation-grid {
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-block: 1.4rem;
+}
+.info-summary-grid .order-container .calculation-grid p {
+  margin-top: 0;
+}
+.info-summary-grid .order-container .calculation-grid .subtotal-calculation,
+.info-summary-grid .order-container .calculation-grid .shipping-calculation,
+.info-summary-grid .order-container .calculation-grid .taxes-calculation {
+  display: flex;
+  justify-content: space-between;
+}
+.info-summary-grid .order-container .calculation-grid .subtotal-calculation p,
+.info-summary-grid .order-container .calculation-grid .shipping-calculation p,
+.info-summary-grid .order-container .calculation-grid .taxes-calculation p {
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+.info-summary-grid .order-container .total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-summary-grid .order-container .total-amount p {
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+
+@media screen and (max-width: 950px) {
+  .info-summary-grid {
+    grid-template-columns: 100%;
+  }
+  .info-summary-grid .order-container {
+    order: 1;
+  }
+  .info-summary-grid .info-container {
+    order: 2;
+    margin-top: 4.5rem;
+  }
+  .info-summary-grid .info-container section#information .cart-links {
+    margin-block: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-summary-grid .info-container {
+    margin-inline: 0;
+  }
+  .info-summary-grid .info-container section#information .cart-links img {
+    padding-inline: 0.5rem;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form
+    .name-container {
+    grid-template-columns: 1fr;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form
+    .name-container
+    .form-input {
+    margin-bottom: 1.7rem;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form
+    .name-container
+    .form-input
+    input {
+    width: 100%;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form
+    .city {
+    grid-template-columns: 1fr;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form
+    .city
+    .city-label {
+    margin-bottom: 1.7rem;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form
+    .city
+    .city-label
+    input {
+    width: 100%;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    .grid-btns {
+    margin-top: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    .grid-btns
+    button {
+    order: 1;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    .grid-btns
+    .return {
+    margin-top: 1.5rem;
+    order: 2;
+  }
+  .info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    .grid-btns
+    .return
+    a {
+    font-size: 1.4rem;
+    display: block;
+    text-align: center;
+  }
+}

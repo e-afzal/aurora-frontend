@@ -1,0 +1,50 @@
+section.contact-grid {
+  max-width: 1366px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.contact-grid .contact-title {
+  align-self: center;
+}
+section.contact-grid .contact-title h1 {
+  text-align: center;
+}
+section.contact-grid .contact-form-container form.contact-form {
+  width: 75%;
+  margin-inline: auto;
+}
+section.contact-grid .contact-form-container form.contact-form .name-group,
+section.contact-grid .contact-form-container form.contact-form .email-group,
+section.contact-grid .contact-form-container form.contact-form .subject-group,
+section.contact-grid .contact-form-container form.contact-form .message-group {
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+section.contact-grid .contact-form-container form.contact-form p.form-subtitle {
+  margin-bottom: 1rem;
+}
+section.contact-grid .contact-form-container form.contact-form input#name,
+section.contact-grid .contact-form-container form.contact-form input#email,
+section.contact-grid .contact-form-container form.contact-form input#subject {
+  width: 100%;
+}
+section.contact-grid
+  .contact-form-container
+  form.contact-form
+  textarea#message {
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  section.contact-grid {
+    grid-template-columns: 1fr;
+  }
+  section.contact-grid .contact-form-container {
+    margin-top: 2rem;
+  }
+  section.contact-grid .contact-form-container form.contact-form {
+    width: 80%;
+  }
+}

@@ -1,0 +1,160 @@
+.confirmation-grid {
+  max-width: 1420px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 6rem);
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.confirmation-grid .customer-container {
+  width: 90%;
+  margin-inline: auto;
+}
+.confirmation-grid .customer-container .thanks .order-number h5 {
+  font-size: clamp(3rem, 5vw, 3.7rem);
+}
+.confirmation-grid .customer-container .order-confirmed {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.confirmation-grid .customer-container .order-confirmed .map-container {
+  height: 30rem;
+  background-color: #777;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.confirmation-grid .customer-container .order-confirmed .confirm-content {
+  padding: 2rem 1.8rem;
+}
+.confirmation-grid .customer-container .order-confirmed .confirm-content h4 {
+  font-size: clamp(1.9rem, 5vw, 2.2rem);
+}
+.confirmation-grid .customer-container .order-confirmed .confirm-content p {
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+  margin-top: 0.3rem;
+  color: rgba(51, 51, 51, 0.85);
+}
+.confirmation-grid .customer-container .order-updates {
+  padding: 2rem 1.8rem;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  margin-top: 3rem;
+  border-radius: 5px;
+}
+.confirmation-grid .customer-container .order-updates h4 {
+  font-size: clamp(1.9rem, 5vw, 2.2rem);
+}
+.confirmation-grid .customer-container .order-updates p {
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+  margin-top: 0.3rem;
+  color: rgba(51, 51, 51, 0.85);
+}
+.confirmation-grid .customer-container .customer-info-grid {
+  padding: 2rem 1.8rem;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  margin-top: 3rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.5rem;
+}
+.confirmation-grid .customer-container .customer-info-grid h4 {
+  font-size: clamp(1.9rem, 5vw, 2.2rem);
+  margin-bottom: 0.5rem;
+}
+.confirmation-grid .customer-container .customer-info-grid p {
+  margin-top: 0;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #333333d9;
+  font-size: clamp(1.4rem, 2vw, 1.45rem);
+}
+.confirmation-grid .customer-container button.continue {
+  display: block;
+  margin-left: auto;
+  margin-top: 3rem;
+  width: 45%;
+}
+.confirmation-grid .customer-container button.continue a {
+  color: #fff;
+}
+.confirmation-grid .order-container section#summary h2 {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+}
+.confirmation-grid .order-container .product-grid {
+  margin-bottom: 0.7rem;
+  display: grid;
+  grid-template-columns: 25% 55% 20%;
+  align-items: center;
+}
+.confirmation-grid .order-container .product-grid .product-image img {
+  width: 100%;
+}
+.confirmation-grid
+  .order-container
+  .product-grid
+  .product-description
+  p.product-title,
+.confirmation-grid
+  .order-container
+  .product-grid
+  .product-description
+  p.product-size-color {
+  margin-top: 0;
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+.confirmation-grid .order-container .product-grid p.product-price {
+  margin-top: 0;
+  text-align: right;
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+.confirmation-grid .order-container .calculation-grid {
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-block: 1.4rem;
+}
+.confirmation-grid .order-container .calculation-grid p {
+  margin-top: 0;
+}
+.confirmation-grid .order-container .calculation-grid .subtotal-calculation,
+.confirmation-grid .order-container .calculation-grid .shipping-calculation,
+.confirmation-grid .order-container .calculation-grid .taxes-calculation {
+  display: flex;
+  justify-content: space-between;
+}
+.confirmation-grid .order-container .calculation-grid .subtotal-calculation p,
+.confirmation-grid .order-container .calculation-grid .shipping-calculation p,
+.confirmation-grid .order-container .calculation-grid .taxes-calculation p {
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+.confirmation-grid .order-container .total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.confirmation-grid .order-container .total-amount p {
+  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
+}
+
+@media screen and (max-width: 1024px) {
+  .confirmation-grid {
+    grid-template-columns: 1fr;
+  }
+  .confirmation-grid .order-container {
+    order: 1;
+  }
+  .confirmation-grid .customer-container {
+    order: 2;
+    margin-top: 4.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .confirmation-grid .customer-container .customer-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .confirmation-grid .customer-container button.continue {
+    width: 100%;
+  }
+}

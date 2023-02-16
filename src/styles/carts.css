@@ -1,0 +1,205 @@
+section#cart {
+  padding-inline: clamp(1.5rem, 5vw, 7rem);
+  max-width: 1366px;
+  margin-inline: auto;
+}
+section#cart h1 {
+  font-size: clamp(3rem, 7vw, 3.8rem);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 2.8vw;
+}
+section#cart .cart-titles {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding-bottom: 1.2rem;
+}
+section#cart .cart-titles h2.product-title,
+section#cart .cart-titles h2.quantity-title,
+section#cart .cart-titles h2.total-title {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #404040;
+}
+section#cart .cart-titles h2.quantity-title {
+  text-align: center;
+}
+section#cart .cart-titles h2.total-title {
+  text-align: end;
+}
+section#cart .product {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+section#cart .product p {
+  margin-top: 0;
+}
+section#cart .product .product-details {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+section#cart .product .product-details .product-image img {
+  width: 100%;
+}
+section#cart .product .quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#cart .product .quantity-selector .cart-item-adjustment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section#cart
+  .product
+  .quantity-selector
+  .cart-item-adjustment
+  .quantity-adjuster {
+  padding-block: 0.7rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+section#cart
+  .product
+  .quantity-selector
+  .cart-item-adjustment
+  .quantity-adjuster
+  button {
+  padding-inline: 1.4rem;
+  background-color: white;
+  height: 100%;
+  padding-block: 0;
+  border: none;
+  color: rgba(51, 51, 51, 0.5);
+}
+section#cart
+  .product
+  .quantity-selector
+  .cart-item-adjustment
+  .quantity-adjuster
+  button:hover {
+  background-color: transparent;
+  color: #000;
+}
+section#cart .product .quantity-selector .cart-item-adjustment .item-remove {
+  padding-top: 1.5rem;
+}
+section#cart
+  .product
+  .quantity-selector
+  .cart-item-adjustment
+  .item-remove
+  button {
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+section#cart
+  .product
+  .quantity-selector
+  .cart-item-adjustment
+  .item-remove
+  button:hover {
+  background-color: transparent;
+  color: #000;
+}
+section#cart .product .price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+section#cart .bottom {
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 1rem;
+}
+section#cart .bottom .last-column {
+  grid-column: 3/4;
+}
+section#cart .bottom .last-column .total-price p {
+  margin-top: 1.2rem;
+  text-align: right;
+}
+section#cart .bottom .last-column .tax-statement p {
+  margin-top: 3px;
+  text-align: right;
+}
+section#cart .bottom .last-column .checkout-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+section#cart .bottom .last-column .checkout-button button {
+  width: 55%;
+}
+
+@media screen and (max-width: 740px) {
+  section#cart .cart-titles {
+    display: none;
+  }
+  section#cart .product {
+    grid-template-columns: 1fr 1fr;
+  }
+  section#cart .product .quantity-selector {
+    justify-content: flex-end;
+  }
+  section#cart .product .price {
+    display: none;
+  }
+  section#cart .bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 740px) {
+  section#cart .product {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section#cart .product {
+    grid-template-columns: 3fr 1fr;
+  }
+  section#cart .product .product-details {
+    grid-template-columns: 45% 55%;
+  }
+  section#cart .product .product-details .product-image img {
+    width: 100%;
+  }
+  section#cart .product .product-details .product-detail p {
+    text-align: left;
+  }
+  section#cart
+    .product
+    .quantity-selector
+    .cart-item-adjustment
+    .quantity-adjuster {
+    padding-block: 3px;
+  }
+  section#cart
+    .product
+    .quantity-selector
+    .cart-item-adjustment
+    .quantity-adjuster
+    button {
+    padding-inline: 7px;
+  }
+  section#cart .bottom .last-column {
+    grid-column: span 1;
+  }
+  section#cart .bottom .last-column .checkout-button button {
+    width: 100%;
+  }
+}
