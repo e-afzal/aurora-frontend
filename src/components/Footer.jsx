@@ -26,7 +26,7 @@ const Footer = ({ marginTop = "10rem" }) => {
               <a className="footer-link" href="/">home</a>
             </li>
             <li className="footer-list-item">
-              <a className="footer-link" href="#">collections</a>
+              <a className="footer-link" href="/main/fine-jewelry">fine jewelry</a>
             </li>
             <li className="footer-list-item">
               <a className="footer-link" href="/conditions">terms & conditions</a>
