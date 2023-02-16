@@ -43,9 +43,7 @@ const Footer = ({ marginTop = "10rem" }) => {
             <a
               href="https://instagram.com/aurorajewelryae?igshid=NDk5N2NIZjQ="
               target="_blank"
-              className="social-link"
-            >instagram</a
-            >
+              className="social-link">instagram</a>
           </div>
         </div>
       </div>
