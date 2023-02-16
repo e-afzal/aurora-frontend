@@ -54,8 +54,8 @@ const NavSearchMobile = () => {
               <a key={index} className="result" href={`/products/${each.product_id}`}>
                 <div className="result-img">
                   <img
-                    src="/images/homepage/daria_coral-tinified.jpg"
-                    alt="Result"
+                    src={each.product_images.values[0] && each.product_images.values[0].url}
+                    alt={each.product_title}
                   />
                 </div>
                 <div className="result-details">
