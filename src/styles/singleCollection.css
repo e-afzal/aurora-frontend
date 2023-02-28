@@ -99,7 +99,7 @@
   column-gap: 4.5rem;
 }
 #collection-container .search-grid .result-grid a.result-card {
-  height: 30vw;
+  height: max-content;
 }
 #collection-container .search-grid .result-grid a.result-card .card-image {
   width: 100%;
@@ -112,7 +112,7 @@
   max-width: 100%;
   object-position: center center;
   object-fit: contain;
-  height: 20vw;
+  /* height: 20vw; */
 }
 #collection-container .search-grid .result-grid a.result-card .card-content {
   height: 40%;
@@ -147,11 +147,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
   #collection-container .search-grid .result-grid a.result-card {
-    height: 40vw;
+    /* height: 40vw; */
   }
   #collection-container .search-grid .result-grid a.result-card .card-image {
     display: block;
-    height: 65%;
+    /* height: 65%; */
   }
   #collection-container
     .search-grid
@@ -159,7 +159,7 @@
     a.result-card
     .card-image
     img {
-    height: 100%;
+    /* height: 100%; */
     margin-inline: auto;
   }
 }
@@ -182,12 +182,12 @@
     row-gap: 5rem;
   }
   #collection-container .search-grid .result-grid a.result-card {
-    height: 50vw;
+    /* height: 50vw; */
   }
   #collection-container .search-grid .result-grid a.result-card .card-image {
-    height: 80%;
+    /* height: 80%; */
   }
   #collection-container .search-grid .result-grid a.result-card .card-content {
-    height: 20%;
+    /* height: 20%; */
   }
 }

@@ -100,7 +100,8 @@
   margin-bottom: 7rem;
 }
 #category-container section.results-grid .result-grid a.result-card {
-  height: 30vw;
+  /* height: 30vw; */
+  height: max-content;
 }
 #category-container
   section.results-grid
@@ -161,7 +162,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   #collection-container .search-grid .result-grid a.result-card {
-    height: 40vw;
+    /* height: 40vw; */
   }
   #collection-container .search-grid .result-grid a.result-card .card-image {
     display: block;
@@ -196,7 +197,7 @@
     row-gap: 5rem;
   }
   #collection-container .search-grid .result-grid a.result-card {
-    height: 50vw;
+    /* height: 50vw; */
   }
   #collection-container .search-grid .result-grid a.result-card .card-image {
     height: 80%;

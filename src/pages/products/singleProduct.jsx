@@ -275,7 +275,7 @@ const SingleProduct = () => {
             </div>
           </section>
         </div>
-        <Footer marginTop='7rem' />
+        <Footer marginTop='10rem' />
       </>
 
     );

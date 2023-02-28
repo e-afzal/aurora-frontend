@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 .product-container section#single-product .product-gallery {
-  height: 650px;
+  height: max-content;
   width: 100%;
 }
 .product-container section#single-product .product-gallery .swiper-flex {

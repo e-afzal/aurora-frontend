@@ -11,6 +11,8 @@ import Footer from '../../components/Footer';
 
 const CollectionProducts = () => {
   const { collection_name } = useParams();
+  const [gridSize, setGridSize] = useState(2);
+  const [imageHeight, setImageHeight] = useState("30vw");
   const [openFilter, setOpenFilter] = useState(false);
   const [data, setData] = useState(null);
   const [finalData, setFinalData] = useState([
@@ -34,6 +36,24 @@ const CollectionProducts = () => {
         setData(res.data);
       })
       .catch(error => console.log(error.message));
+  }, []);
+
+  // Set items to show per row in grid
+  useEffect(() => {
+    if (window.innerWidth >= 360) {
+      setGridSize(1);
+      setImageHeight("170px");
+    }
+    if (window.innerWidth >= 810) {
+      setGridSize(2);
+      setImageHeight("230px");
+    }
+    if (window.innerWidth >= 1024) {
+      setGridSize(3);
+    }
+    if (window.innerWidth >= 1366) {
+      setGridSize(4);
+    }
   }, []);
 
   const activeFilter = () => {
@@ -117,7 +137,9 @@ const CollectionProducts = () => {
 
           {/* RESULT GRID */}
           <section className="search-grid">
-            <div className="result-grid" style={{ rowGap: "3.5rem" }}>
+            <div className="result-grid"
+              style={{ gridTemplateColumns: `repeat(${gridSize},1fr)` }}
+            >
 
               {finalData.map((product, index) => (
                 <a key={index} href={`/products/${product.product_id}`} className="result-card">
@@ -125,6 +147,7 @@ const CollectionProducts = () => {
                     <img
                       src={product.product_images.values[0] && product.product_images.values[0].url}
                       alt={product.product_title}
+                      style={{ height: imageHeight }}
                     />
                   </div>
                   <div className="card-content" style={{ marginTop: "1rem" }}>

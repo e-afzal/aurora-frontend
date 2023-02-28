@@ -39,8 +39,12 @@ li {
 }
 
 @font-face {
-  font-family: "alice-regular";
-  src: url("../assets/font/alice-regular.ttf");
+  font-family: "franco-regular";
+  src: url("../assets/font/franco-regular.ttf");
+}
+@font-face {
+  font-family: "franco-bold";
+  src: url("../assets/font/franco-bold.ttf");
 }
 
 @font-face {
@@ -129,8 +133,11 @@ h1 {
 h2 {
   font-size: clamp(2.6rem, 5vw, 3.4rem);
   text-transform: uppercase;
-  font-family: "cormorant-medium", sans-serif;
+  font-weight: 100;
+  /* font-family: "cormorant-medium", sans-serif; */
+  font-family: "franco-bold", sans-serif;
   color: #000;
+  letter-spacing: 2.25px;
 }
 
 h3 {
@@ -147,7 +154,7 @@ h4 {
 }
 
 h5 {
-  font-family: "cormorant-medium", serif;
+  font-family: "franco-regular", serif;
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 100;
 }
@@ -157,12 +164,12 @@ h6 {
 }
 
 p {
-  font-size: clamp(1.45rem, 2.7vw, 1.6rem);
-  font-family: "raleway-medium", sans-serif;
-  letter-spacing: -0.25px;
+  font-size: clamp(1.7rem, 2.7vw, 1.8rem);
+  font-family: "franco-regular", serif;
+  letter-spacing: 1px;
   margin: 0;
   line-height: 1.7;
-  text-align: left;
+  text-align: justify;
   margin-top: 1.5rem;
 }
 

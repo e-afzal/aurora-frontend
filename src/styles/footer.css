@@ -32,9 +32,11 @@ body
   a.footer-link {
   display: inline-block;
   margin-top: 0.5rem;
-  font-size: 14px;
+  letter-spacing: 1px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #4d4d4d;
+  font-family: "franco-regular", serif;
 }
 body footer#footer-main .footer-grid .footer-social {
   display: inline-block;
@@ -47,16 +49,21 @@ body footer#footer-main .footer-grid .footer-social .social h5 {
   letter-spacing: 1px;
 }
 body footer#footer-main .footer-grid .footer-social .social a.social-link {
+  letter-spacing: 1px;
   display: inline-block;
   margin-top: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #4d4d4d;
+  font-family: "franco-regular", serif;
 }
 body footer#footer-main .footer-copyright {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
+}
+body footer#footer-main .footer-copyright p {
+  font-size: 1.7rem;
 }
 
 @media screen and (max-width: 525px) {

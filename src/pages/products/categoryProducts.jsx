@@ -13,6 +13,8 @@ import Footer from './../../components/Footer';
 const CategoryProducts = () => {
   const { category_type } = useParams();
   const categoryHeading = useRef();
+  const [gridSize, setGridSize] = useState(2);
+  const [imageHeight, setImageHeight] = useState("30vw");
   const [openFilter, setOpenFilter] = useState(false);
   const [data, setData] = useState(null);
   const [finalData, setFinalData] = useState(null);
@@ -33,6 +35,24 @@ const CategoryProducts = () => {
         setData(res.data);
       })
       .catch(error => console.log(error.message));
+  }, []);
+
+  // Set items to show per row in grid
+  useEffect(() => {
+    if (window.innerWidth >= 360) {
+      setGridSize(1);
+      setImageHeight("170px");
+    }
+    if (window.innerWidth >= 810) {
+      setGridSize(2);
+      setImageHeight("230px");
+    }
+    if (window.innerWidth >= 1024) {
+      setGridSize(3);
+    }
+    if (window.innerWidth >= 1366) {
+      setGridSize(4);
+    }
   }, []);
 
   const activeFilter = () => {
@@ -132,15 +152,14 @@ const CategoryProducts = () => {
 
           {/* RESULT GRID */}
           <section className="results-grid">
-            <div className="result-grid">
+            <div className="result-grid" style={{ gridTemplateColumns: `repeat(${gridSize},1fr)` }}>
               {currentPosts && currentPosts.map((product, index) => (
                 <a key={index} href={`/products/${product.product_id}`} className="result-card">
                   <div className="card-image" style={{ overflowY: "hidden" }}>
                     <img
                       src={product.product_images.values[0] && product.product_images.values[0].url}
-                      // src={product.product_images.values[0]}
                       alt={product.product_title}
-                      style={{ aspectRatio: "16/9" }}
+                      style={{ height: imageHeight }}
                     />
                   </div>
                   <div className="card-content">
