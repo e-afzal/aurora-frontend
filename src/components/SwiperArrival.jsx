@@ -29,7 +29,9 @@ const SwiperArrival = ({ products }) => {
 
   // CURRENCY LOCALIZATION Function
   function localize(amount) {
-    return Intl.NumberFormat("en-AE", { style: "currency", currency: "AED" }).format(amount);
+    console.log(amount);
+    const numeral = Number(amount);
+    return Intl.NumberFormat("en-AE", { style: "currency", currency: "AED" }).format(numeral);
   }
 
   return (
