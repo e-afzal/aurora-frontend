@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import '../styles/conditions.css';
 import axios from 'axios';
+import { Helmet } from "react-helmet";
 
 // COMPONENT(S)
 import Navbar from "../components/Navbar";
@@ -16,6 +17,17 @@ const Conditions = () => {
 
   return (
     <>
+      {/* SEO MARKUP */}
+      <Helmet>
+        <title>Terms &amp; Conditions – Aurora Jewelry</title>
+        <meta name="description" content="Aurora Jewely Terms and Conditions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Aurora Jewelry Terms and Conditions" />
+        <meta property="og:site_name" content="Aurora Jewelry" />
+        <meta property="og:description" content="Aurora Jewely Terms and Conditions" />
+        <meta property="og:url" content="https://aurorajewelry.ae/conditions" />
+      </Helmet>
+
       <Navbar marginBottom={"5rem"} />
       {conditions !== null && (
         <div>

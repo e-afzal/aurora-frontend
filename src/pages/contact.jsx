@@ -2,6 +2,7 @@ import '../styles/contact.css';
 import { useState } from 'react';
 import axios from "axios";
 import toast, { Toaster } from 'react-hot-toast';
+import { Helmet } from "react-helmet";
 
 // COMPONENT(S)
 import Navbar from './../components/Navbar';
@@ -49,6 +50,17 @@ const Contact = () => {
 
   return (
     <>
+      {/* SEO MARKUP */}
+      <Helmet>
+        <title>Contact – Aurora Jewelry</title>
+        <meta property="og:type" content="website" />
+        <meta name="description" content="Aurora Jewely Contact Form." />
+        <meta property="og:title" content="Aurora Jewelry Contact Form" />
+        <meta property="og:description" content="Aurora Jewely Contact Form." />
+        <meta property="og:url" content="https://aurorajewelry.ae/contact" />
+        <meta property="og:site_name" content="Aurora Jewelry" />
+      </Helmet>
+
       <Navbar marginBottom={"5.5rem"} />
 
       {/* TOAST */}

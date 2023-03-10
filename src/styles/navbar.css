@@ -39,22 +39,17 @@ li {
 }
 
 @font-face {
-  font-family: "franco-regular";
-  src: url("../assets/font/franco-regular.ttf");
-}
-@font-face {
-  font-family: "franco-bold";
-  src: url("../assets/font/franco-bold.ttf");
+  font-family: "FuturaPT-Book";
+  src: url("../assets/font/FuturaPT-Book.otf");
 }
 
 @font-face {
-  font-family: "cormorant-light";
-  src: url("../assets/font/cormorant-light.ttf");
+  font-family: "nunito-regular";
+  src: url("../assets/font/NunitoSans-Regular.ttf");
 }
-
 @font-face {
-  font-family: "cormorant-lightItalic";
-  src: url("../assets/font/cormorant-light_italic.ttf");
+  font-family: "nunito-semi";
+  src: url("../assets/font/NunitoSans-SemiBold.ttf");
 }
 
 @font-face {
@@ -78,41 +73,6 @@ li {
 }
 
 @font-face {
-  font-family: "raleway-regular";
-  src: url("../assets/font/raleway-regular.ttf");
-}
-
-@font-face {
-  font-family: "raleway-medium";
-  src: url("../assets/font/raleway-medium.ttf");
-}
-
-/* @font-face {
-  font-family: "Brandon_Grotesque-Regular";
-  src: url("../assets/font/brandon_grotesque-regular.otf");
-}
-
-@font-face {
-  font-family: "Brandon_Grotesque-Medium";
-  src: url("../assets/font/brandon_grotesque-medium.otf");
-}
-
-@font-face {
-  font-family: "Brandon_Grotesque-Bold";
-  src: url("../assets/font/brandon_grotesque-bold.otf");
-}
-
-@font-face {
-  font-family: "Chronicle_Display-Light";
-  src: url("../assets/font/chronicle_display-light.otf");
-}
-
-@font-face {
-  font-family: "Chronicle_Display-Roman";
-  src: url("../assets/font/chronicle_display-roman.otf");
-} */
-
-@font-face {
   font-family: "Avenir-Medium";
   src: url("../assets/font/avenir-medium.ttf");
 }
@@ -134,8 +94,7 @@ h2 {
   font-size: clamp(2.6rem, 5vw, 3.4rem);
   text-transform: uppercase;
   font-weight: 100;
-  /* font-family: "cormorant-medium", sans-serif; */
-  font-family: "franco-bold", sans-serif;
+  font-family: "cormorant-medium", sans-serif;
   color: #000;
   letter-spacing: 2.25px;
 }
@@ -154,7 +113,7 @@ h4 {
 }
 
 h5 {
-  font-family: "franco-regular", serif;
+  font-family: "nunito-semi", sans-serif;
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 100;
 }
@@ -164,13 +123,16 @@ h6 {
 }
 
 p {
-  font-size: clamp(1.7rem, 2.7vw, 1.8rem);
-  font-family: "franco-regular", serif;
-  letter-spacing: 1px;
+  /* font-size: clamp(1.6rem, 2.7vw, 1.6rem); */
+  /* font-family: "franco-regular", serif; */
+  /* letter-spacing: 1px; */
+  font-size: 1.7rem;
+  font-family: "FuturaPT-Book", sans-serif;
   margin: 0;
   line-height: 1.7;
   text-align: justify;
   margin-top: 1.5rem;
+  letter-spacing: 0.25px;
 }
 
 ul {

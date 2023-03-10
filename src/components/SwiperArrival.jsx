@@ -9,17 +9,28 @@ const SwiperArrival = ({ products }) => {
 
   useEffect(() => {
     if (window.innerWidth >= 360) {
-      setSlides(2);
+      setSlides(1);
       setSlideHeight("100%");
+    }
+    if (window.innerWidth >= 600) {
+      setSlides(2);
+      setCenteredSlides(false);
     }
     if (window.innerWidth >= 810) {
       setSlides(3);
-      setCenteredSlides(false);
     }
     if (window.innerWidth >= 1366) {
       setSlides(4);
     }
+    if (window.innerWidth >= 1600) {
+      setSlides(5);
+    }
   }, []);
+
+  // CURRENCY LOCALIZATION Function
+  function localize(amount) {
+    return Intl.NumberFormat("en-AE", { style: "currency", currency: "AED" }).format(amount);
+  }
 
   return (
     <>
@@ -36,7 +47,6 @@ const SwiperArrival = ({ products }) => {
       >
         {products.map((product, index) => (
           <SwiperSlide key={index} style={{
-            borderRadius: "7px",
             height: slideHeight,
             // marginLeft: "1rem", 
             paddingBlock: "1rem"
@@ -48,6 +58,7 @@ const SwiperArrival = ({ products }) => {
                 alt={product.product_title}
               />
               <p className="carousel-item-title">{product.product_title}</p>
+              <p className="carousel-item-title" style={{ marginTop: "-4px" }}>{localize(product.product_price)}</p>
             </a>
           </SwiperSlide>
         ))}

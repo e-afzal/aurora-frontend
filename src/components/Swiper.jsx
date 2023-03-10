@@ -14,10 +14,7 @@ const ProductGallery = ({ images, alt }) => {
   // Set items to show per row in grid
   useEffect(() => {
     if (window.innerWidth >= 810) {
-      setThumbSlides(3);
-    }
-    if (window.innerWidth >= 1024) {
-      setThumbSlides(4);
+      setThumbSlides(5);
     }
   }, []);
 
@@ -43,6 +40,7 @@ const ProductGallery = ({ images, alt }) => {
         ))}
       </Swiper>
 
+      {/* THUMBNAILS */}
       {images.length > 1 && (
         <Swiper
           style={{ marginTop: "2.5rem", overflowY: "hidden", width: "80%" }}
@@ -53,7 +51,9 @@ const ProductGallery = ({ images, alt }) => {
           onSwiper={setThumbsSwiper}
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+            >
               <img
                 style={{ width: "100%", height: "100%" }}
                 src={image.url}

@@ -24,6 +24,8 @@ section.contact-grid .contact-form-container form.contact-form .message-group {
 }
 section.contact-grid .contact-form-container form.contact-form p.form-subtitle {
   margin-bottom: 1rem;
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: clamp(1.55rem, 2.7vw, 1.8rem);
 }
 section.contact-grid .contact-form-container form.contact-form input#name,
 section.contact-grid .contact-form-container form.contact-form input#email,

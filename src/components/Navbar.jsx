@@ -173,12 +173,12 @@ const Navbar = ({ marginBottom }) => {
               alt="Search Icon"
             />
           </div>
-          <div className="nav-cart-icon">
+          <a href='/checkout/cart' className="nav-cart-icon">
             <img
               src="/images/homepage/icons/bag-icon-white.svg"
               alt="Shopping Bag Icon"
             />
-          </div>
+          </a>
         </div>
 
         {/* MOBILE NAVBAR OVERLAY */}
@@ -188,7 +188,9 @@ const Navbar = ({ marginBottom }) => {
           </div>
           <ul>
             <li><a href="/collections/main/fine-jewelry">FINE JEWELRY</a></li>
-            <li><a href="#">ACCOUNT</a></li>
+            <li>
+              <button className="desktop-nav-list-link" onClick={() => loginWithRedirect()} style={{ padding: 0, display: "inline-block", width: "min-content" }}>Account</button>
+            </li>
             <li><a href="/contact">CONTACT</a></li>
           </ul>
         </div>
