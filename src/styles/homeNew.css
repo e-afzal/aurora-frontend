@@ -96,20 +96,20 @@ body .overall-container section#dream .dream-content {
 body .overall-container section#dream .dream-content h2.dream-title {
   text-transform: uppercase;
   text-align: center;
-  color: #e8928f;
+  color: #000;
   padding-bottom: 1rem;
   position: relative;
 }
 body .overall-container section#dream .dream-content h2.dream-title::after {
   content: "";
-  height: 2px;
+  height: 1.5px;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
   bottom: -7px;
   width: 5rem;
-  background-color: #e8928f;
+  background-color: #000;
 }
 body .overall-container section#dream .dream-content p.dream-description {
   margin-block: 3rem;
@@ -119,12 +119,12 @@ body .overall-container section#dream .dream-content p.dream-description {
 
 section#trending {
   padding: 7.5rem;
-  background-color: #050b16;
+  /* background-color: #050b16; */
 }
 section#trending h2.trending-title {
   text-transform: uppercase;
   text-align: center;
-  color: #e8928f;
+  color: #000;
   padding-bottom: 1rem;
   margin-bottom: 7.5rem;
   position: relative;
@@ -134,14 +134,14 @@ section#trending h2.trending-title {
 }
 section#trending h2.trending-title::after {
   content: "";
-  height: 2px;
+  height: 1.5px;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
   bottom: -4px;
-  width: 8.4rem;
-  background-color: #e8928f;
+  width: 5rem;
+  background-color: #000;
 }
 section#trending .trending-image-container {
   width: 100%;
@@ -150,7 +150,6 @@ section#trending .trending-image-container {
 }
 section#trending .trending-image-container img.trending-image {
   width: 100%;
-  opacity: 0.75;
   border-radius: 7px;
 }
 section#trending a.view-collections {
@@ -160,7 +159,7 @@ section#trending a.view-collections {
   padding: 1.6rem 4.5rem;
   border-radius: 3px;
   margin-top: 4.5rem;
-  background-color: #004f6c;
+  background-color: #000;
   font-size: 1.4rem;
   text-align: center;
   text-transform: uppercase;
@@ -175,7 +174,8 @@ section#trending a.view-collections {
 
 section#arrival {
   height: max-content;
-  border: 1px solid #e8928f;
+  /* border: 1px solid #e8928f; */
+  border: 1px solid #000;
   margin-top: 7.5rem;
   position: relative;
   margin-inline: 2rem;
@@ -191,7 +191,7 @@ section#arrival h2.arrivals-title {
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
-  color: #e8928f;
+  color: #000;
   background-color: white;
 }
 section#arrival .product-container {
