@@ -222,7 +222,7 @@ const Shipping = () => {
                   </div>
                   <div className="product-description">
                     <p className="product-title" style={{ textTransform: "capitalize" }}>{eachItem.productTitle}</p>
-                    <p className="product-size-color">
+                    <p className="product-size-color" style={{ textTransform: "capitalize" }}>
                       {eachItem.size && `${eachItem.size} / `}
                       {eachItem.goldColor && `${eachItem.goldColor}`}
                       {eachItem.stone && ` / ${eachItem.stone}`}

@@ -266,10 +266,10 @@ const SingleProduct = () => {
                   </div>
                 </div>
               </div>
-              <button className="cart" onClick={handleAdd}>
+              <button className="cart" onClick={handleAdd} style={{ letterSpacing: "1px" }}>
                 add to cart
               </button>
-              <button className="buy" onClick={handleBuy}>
+              <button className="buy" onClick={handleBuy} style={{ letterSpacing: "1px" }}>
                 buy it now
               </button>
             </div>

@@ -1,6 +1,6 @@
 .shipping-info-summary-grid {
   padding-inline: clamp(1.5rem, 5vw, 7rem);
-  max-width: 1550px;
+  max-width: 1400px;
   margin-inline: auto;
   padding-inline: clamp(1.5rem, 5vw, 6rem);
   display: grid;
@@ -64,7 +64,7 @@
   p {
   margin-top: 0;
   text-align: left;
-  font-size: 1.45rem;
+  font-size: 15.5px;
 }
 .shipping-info-summary-grid
   .info-container
@@ -106,7 +106,7 @@
   section.shipping
   h5 {
   margin-bottom: 1.7rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 .shipping-info-summary-grid
   .info-container
@@ -175,6 +175,8 @@
   p {
   margin-top: 0;
   display: inline-block;
+  font-size: 15.5px;
+  font-family: "Avenir-Medium", sans-serif;
 }
 .shipping-info-summary-grid
   .info-container
@@ -185,6 +187,7 @@
   label {
   margin-left: 0.5rem;
   font-family: "Avenir-Medium", sans-serif;
+  font-size: 15.5px;
 }
 .shipping-info-summary-grid
   .info-container
@@ -210,11 +213,13 @@
 .shipping-info-summary-grid .order-container section#summary h2 {
   text-align: center;
   font-size: clamp(2.5rem, 5vw, 3rem);
+  letter-spacing: 0.5px;
 }
 .shipping-info-summary-grid .order-container .product-grid {
   margin-bottom: 0.7rem;
   display: grid;
-  grid-template-columns: 25% 55% 20%;
+  /* grid-template-columns: 25% 55% 20%; */
+  grid-template-columns: 20% 55% 25%;
   align-items: center;
 }
 .shipping-info-summary-grid .order-container .product-grid .product-image img {
@@ -405,5 +410,49 @@
     display: block;
     text-align: center;
     font-size: 1.4rem;
+  }
+  .shipping-info-summary-grid .order-container .product-grid {
+    grid-template-columns: 20% 45% 35%;
+  }
+  .shipping-info-summary-grid .order-container section#summary h2 {
+    margin-bottom: 2rem;
+  }
+  .shipping-info-summary-grid
+    .info-container
+    section#information
+    section.contact
+    .contact-container
+    p {
+    font-size: 15px;
+  }
+  .shipping-info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form.shipping-form
+    label.input-container
+    label,
+  .shipping-info-summary-grid
+    .info-container
+    section#information
+    section.shipping
+    form.shipping-form
+    label.input-container
+    p {
+    font-size: 14.5px;
+  }
+  .shipping-info-summary-grid
+    .info-container
+    section#information
+    section.contact
+    .contact-container
+    .contact-info-grid,
+  .shipping-info-summary-grid
+    .info-container
+    section#information
+    section.contact
+    .contact-container
+    .ship-to-grid {
+    display: block;
   }
 }

@@ -28,7 +28,8 @@
   padding-block: 1.5rem;
 }
 .filter-overlay .filter-pane .filter-header h3 {
-  letter-spacing: 3px;
+  font-family: "cormorant-medium", serif;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -163,11 +164,12 @@
   padding-block: 1.5rem;
 }
 .filter-overlay .filter-pane .filter-category h5 {
-  letter-spacing: 1px;
+  letter-spacing: 1.75px;
   font-family: "Avenir-Medium", sans-serif;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  font-size: 15.5px;
 }
 .filter-overlay .filter-pane .filter-category ul.filter-category-options li {
   font-family: "Avenir-Medium", sans-serif;
@@ -191,16 +193,17 @@
 
 section#search {
   padding-inline: clamp(1.5rem, 5vw, 7rem);
-  max-width: 1920px;
+  max-width: 1350px;
   margin-inline: auto;
 }
-section#search h1 {
-  letter-spacing: 3.5px;
+section#search h2 {
   text-align: center;
-  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  letter-spacing: 1.5px;
 }
 section#search p {
   text-align: center;
+  margin-top: 5px;
 }
 section#search .searchsortbar {
   border: 1px solid rgba(51, 51, 51, 0.2);
@@ -261,15 +264,18 @@ section#search .search-grid {
 section#search .search-grid .result-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 5rem;
-  column-gap: 4.5rem;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  margin-bottom: 5.5rem;
 }
 section#search .search-grid .result-grid a.result-card {
-  height: 30vw;
+  /* height: 30vw; */
+  height: max-content;
 }
 section#search .search-grid .result-grid a.result-card .card-image {
   width: 100%;
-  height: 60%;
+  /* height: 60%; */
+  height: max-content;
   display: flex;
   flex-direction: column;
 }
@@ -278,7 +284,8 @@ section#search .search-grid .result-grid a.result-card .card-image img {
   max-width: 100%;
   object-position: center center;
   object-fit: contain;
-  height: 20vw;
+  /* height: 20vw; */
+  height: 18rem;
 }
 section#search .search-grid .result-grid a.result-card .card-content {
   height: 40%;
@@ -289,7 +296,9 @@ section#search
   a.result-card
   .card-content
   h4.card-title {
+  font-family: "FuturaPT-Book", sans-serif;
   text-align: center;
+  font-size: clamp(1.65rem, 2.9vw, 1.8rem);
 }
 section#search
   .search-grid
@@ -297,9 +306,11 @@ section#search
   a.result-card
   .card-content
   p.card-price {
+  font-size: clamp(1.55rem, 2.9vw, 1.65rem);
+  letter-spacing: 0px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 @media screen and (max-width: 920px) {
@@ -343,13 +354,14 @@ section#search
   }
   section#search .search-grid .result-grid {
     grid-template-columns: 1fr;
-    row-gap: 5rem;
+    /* row-gap: 5rem; */
+    height: max-content;
   }
   section#search .search-grid .result-grid a.result-card {
-    height: 50vw;
+    height: max-content;
   }
-  section#search .search-grid .result-grid a.result-card .card-image {
-    height: 80%;
+  section#search .search-grid .result-grid a.result-card .card-image img {
+    width: 45vw;
   }
   section#search .search-grid .result-grid a.result-card .card-content {
     height: 20%;

@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 // COMPONENT(S)
 import Navbar from './../components/Navbar';
 import SwiperHomeCarousel from '../components/SwiperHomeCarousel';
+import TrendingSwiper from './../components/SwiperTrending';
 import SwiperArrival from './../components/SwiperArrival';
 import Footer from '../components/Footer';
 
@@ -89,11 +90,12 @@ const Home = () => {
         <section id="trending">
           <h2 class="trending-title">trending collections</h2>
           <div class="trending-image-container">
-            <img
+            <TrendingSwiper />
+            {/* <img
               src="./images/homepage/collections/daria.webp"
               alt="daria ring and model"
               class="trending-image"
-            />
+            /> */}
           </div>
           <a href="#" class="view-collections">view all collections</a>
         </section>

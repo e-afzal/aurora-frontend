@@ -1,6 +1,8 @@
 #category-container {
   padding-inline: clamp(1.5rem, 5vw, 7rem);
-  padding-block: 7rem;
+  padding-block: 5rem;
+  max-width: 1350px;
+  margin-inline: auto;
 }
 #category-container .category-image-container {
   margin-block: 7rem;
@@ -13,16 +15,17 @@
   object-fit: cover;
 }
 #category-container .category-content h2.category-heading {
-  font-size: clamp(3rem, 7vw, 3.7rem);
-  text-transform: capitalize;
+  font-size: clamp(2rem, 5vw, 3.35rem);
+  text-transform: uppercase;
   letter-spacing: 0.55px;
   text-align: center;
 }
 #category-container .category-content h5.category-caption {
+  font-family: "FuturaPT-Book", sans-serif;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
   margin-top: 3px;
-  letter-spacing: 0.55px;
 }
 #category-container .category-content p.category-description {
   margin-top: 2rem;
@@ -95,12 +98,11 @@
 #category-container section.results-grid .result-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 5rem;
-  column-gap: 4.5rem;
+  row-gap: 3rem;
+  column-gap: 2rem;
   margin-bottom: 7rem;
 }
 #category-container section.results-grid .result-grid a.result-card {
-  /* height: 30vw; */
   height: max-content;
 }
 #category-container
@@ -109,7 +111,7 @@
   a.result-card
   .card-image {
   width: 100%;
-  height: 60%;
+  height: max-content;
   display: flex;
   flex-direction: column;
 }
@@ -138,7 +140,9 @@
   a.result-card
   .card-content
   h4.card-title {
+  font-family: "FuturaPT-Book", sans-serif;
   text-align: center;
+  font-size: clamp(1.65rem, 2.9vw, 1.8rem);
 }
 #category-container
   section.results-grid
@@ -146,9 +150,11 @@
   a.result-card
   .card-content
   p.card-price {
+  font-size: clamp(1.55rem, 2.9vw, 1.65rem);
+  letter-spacing: 0px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 @media screen and (max-width: 920px) {
@@ -158,15 +164,15 @@
 }
 
 @media screen and (max-width: 810px) {
-  #collection-container .search-grid .result-grid {
-    grid-template-columns: repeat(2, 1fr);
+  #category-container section.results-grid .result-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
   #collection-container .search-grid .result-grid a.result-card {
     /* height: 40vw; */
   }
   #collection-container .search-grid .result-grid a.result-card .card-image {
     display: block;
-    height: 65%;
+    /* height: 65%; */
   }
   #collection-container
     .search-grid
@@ -174,7 +180,7 @@
     a.result-card
     .card-image
     img {
-    height: 100%;
+    /* height: 100%; */
     margin-inline: auto;
   }
 }
@@ -183,16 +189,13 @@
   #collection-container .filterSortBar .adjustment-wrapper {
     justify-content: flex-start;
   }
-  #collection-container
-    .filterSortBar
-    .adjustment-wrapper
-    button.filter-button {
+  #category-container .filterSortBar .adjustment-wrapper button.filter-button {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 515px) {
-  #collection-container .search-grid .result-grid {
+  #category-container section.results-grid .result-grid {
     grid-template-columns: 1fr;
     row-gap: 5rem;
   }

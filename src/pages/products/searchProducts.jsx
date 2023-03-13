@@ -71,7 +71,7 @@ const Search = () => {
         {/* SEARCH SECTION */}
         <>
           <section id="search">
-            <h1>Search</h1>
+            <h2>Search</h2>
             <div>
               <p ref={headingRef} style={{ marginBottom: "5rem" }}>{result.length} {result.length === 1 ? "result" : "results"} for "{`${query}`}"</p>
 

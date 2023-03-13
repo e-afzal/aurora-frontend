@@ -91,7 +91,7 @@ const SearchFilter = ({ filters, setFilters, handleResult, openFilter, mode, dat
                       marginLeft: "7px",
                       marginBottom: "5px",
                       color: "#fff",
-                      fontFamily: "Avenir-Medium,sans-serif"
+                      fontFamily: "FuturaPT-Book,sans-serif"
                     }}>{collection.name}</label>
                   </div>
                 ))}
@@ -121,7 +121,8 @@ const SearchFilter = ({ filters, setFilters, handleResult, openFilter, mode, dat
                         marginLeft: "7px",
                         marginBottom: "5px",
                         color: "#fff",
-                        fontFamily: "Avenir-Medium,sans-serif"
+                        fontFamily: "Avenir-Medium,sans-serif",
+                        fontSize: "15px"
                       }}>{category.name}</label>
                     </div>
                   ))}

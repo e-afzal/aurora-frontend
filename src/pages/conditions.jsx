@@ -9,11 +9,53 @@ import Footer from "../components/Footer";
 
 const Conditions = () => {
   const [conditions, setConditions] = useState(null);
+  const [formattedConditions, setFormattedConditions] = useState({
+    shipping: [],
+    refundAndExchange: [],
+    accountsAndMembership: [],
+    repairsAndDefects: [],
+    payment: [],
+    websiteUsage: [],
+    shoppingAtAurora: [],
+    pricingPolicy: [],
+    propertyAndRisk: [],
+    safetyOfPersonalDetails: [],
+    copyrightAndTrademarks: [],
+    content: [],
+    thirdPartyLinks: [],
+    acceptanceOfTerms: [],
+    backups: [],
+  });
+
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/users/conditions/condition`).then(res => {
       setConditions(res.data);
     }).catch(error => console.log(error.message));
   }, []);
+
+  useEffect(() => {
+    if (conditions !== null) {
+      setFormattedConditions(prevState => {
+        return {
+          shipping: conditions.shipping.split("|"),
+          refundAndExchange: conditions.refundAndExchange.split("|"),
+          accountsAndMembership: conditions.accountsAndMembership.split("|"),
+          repairsAndDefects: conditions.repairsAndDefects.split("|"),
+          payment: conditions.payment.split("|"),
+          websiteUsage: conditions.websiteUsage.split("|"),
+          shoppingAtAurora: conditions.shoppingAtAurora.split("|"),
+          pricingPolicy: conditions.pricingPolicy.split("|"),
+          propertyAndRisk: conditions.propertyAndRisk.split("|"),
+          safetyOfPersonalDetails: conditions.safetyOfPersonalDetails.split("|"),
+          copyrightAndTrademarks: conditions.copyrightAndTrademarks.split("|"),
+          content: conditions.content.split("|"),
+          thirdPartyLinks: conditions.thirdPartyLinks.split("|"),
+          acceptanceOfTerms: conditions.acceptanceOfTerms.split("|"),
+          backups: conditions.backups.split("|"),
+        };
+      });
+    }
+  }, [conditions]);
 
   return (
     <>
@@ -32,75 +74,97 @@ const Conditions = () => {
       {conditions !== null && (
         <div>
           <section id="conditions">
-            <h2
-              style={{
-                marginBottom: "3rem",
-                textTransform: "capitalize",
-                textAlign: "center",
-              }}
-            >
-              terms and conditions
-            </h2>
+            <h2>terms and conditions</h2>
 
             <div className="condition conditions-shipping">
-              <h3>SHIPPING</h3>
-              <p>{conditions.shipping}</p>
+              <h3>1. SHIPPING</h3>
+              {formattedConditions.shipping.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition refund">
-              <h3>refund and exchange</h3>
-              <p>{conditions.refundAndExchange}</p>
+              <h3>2. refund and exchange</h3>
+              {formattedConditions.refundAndExchange.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition account">
-              <h3>accounts and membership</h3>
-              <p>{conditions.accountsAndMembership}</p>
+              <h3>3. accounts and membership</h3>
+              {formattedConditions.accountsAndMembership.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition repair">
-              <h3>Repairs and defects</h3>
-              <p>{conditions.repairsAndDefects}</p>
+              <h3>4. Repairs and defects</h3>
+              {formattedConditions.repairsAndDefects.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition payment">
-              <h3>Payment</h3>
-              <p>{conditions.payment}</p>
+              <h3>5. Payment</h3>
+              {formattedConditions.payment.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition usage">
-              <h3>Website usage</h3>
-              <p>{conditions.websiteUsage}</p>
+              <h3>6. Website usage</h3>
+              {formattedConditions.websiteUsage.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition shopping">
-              <h3>Shopping at aurorajewelry.ae</h3>
-              <p>{conditions.shoppingAtAurora}</p>
+              <h3>7. Shopping at aurorajewelry.ae</h3>
+              {formattedConditions.shoppingAtAurora.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition pricing">
-              <h3>Pricing Policy</h3>
-              <p>{conditions.pricingPolicy}</p>
+              <h3>8. Pricing Policy</h3>
+              {formattedConditions.pricingPolicy.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition risk">
-              <h3>Passing of property and risk</h3>
-              <p>{conditions.propertyAndRisk}</p>
+              <h3>9. Passing of property and risk</h3>
+              {formattedConditions.propertyAndRisk.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition details">
-              <h3>safety of personal details</h3>
-              <p>{conditions.safetyOfPersonalDetails}</p>
+              <h3>10. safety of personal details</h3>
+              {formattedConditions.safetyOfPersonalDetails.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition copyright">
-              <h3>copyright and trademarks</h3>
-              <p>{conditions.copyrightAndTrademarks}</p>
+              <h3>11. copyright and trademarks</h3>
+              {formattedConditions.copyrightAndTrademarks.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition content">
-              <h3>Content</h3>
-              <p>{conditions.content}</p>
+              <h3>12. Content</h3>
+              {formattedConditions.content.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition links">
-              <h3>third-party links</h3>
-              <p>{conditions.thirdPartyLinks}</p>
+              <h3>13. third-party links</h3>
+              {formattedConditions.thirdPartyLinks.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition acceptance">
-              <h3>acceptance of terms</h3>
-              <p>{conditions.acceptanceOfTerms}</p>
+              <h3>14. acceptance of terms</h3>
+              {formattedConditions.acceptanceOfTerms.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
             <div className="condition backup">
-              <h3>backup</h3>
-              <p>{conditions.backups}</p>
+              <h3>15. backup</h3>
+              {formattedConditions.backups.map(shipping => (
+                <p>{shipping}</p>
+              ))}
             </div>
           </section>
           <Footer />

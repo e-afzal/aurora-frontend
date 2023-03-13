@@ -1,5 +1,5 @@
 .product-container {
-  max-width: 1920px;
+  max-width: 1350px;
   padding-inline: clamp(1.5rem, 5vw, 7rem);
   margin-inline: auto;
 }
@@ -136,6 +136,8 @@
   .product-details
   .product-header
   h3.product-title {
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-family: "cormorant-medium", serif;
   text-transform: capitalize;
   color: #000;
   margin-bottom: 1rem;
@@ -145,8 +147,8 @@
   .product-details
   .product-header
   h4.product-price {
-  font-family: "alice-regular";
-  font-size: 17px;
+  font-family: "FuturaPT-Book", sans-serif;
+  font-size: clamp(1.5rem, 3.5vw, 1.75rem);
 }
 .product-container
   section#single-product
@@ -164,6 +166,8 @@
   margin-bottom: 0.7rem;
   list-style: disc;
   font-family: "Avenir-Medium", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  letter-spacing: 0px;
 }
 .product-container
   section#single-product
@@ -268,7 +272,7 @@
   }
   .product-container section#single-product .product-gallery {
     height: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 8.5rem;
   }
   .product-container section#single-product .product-gallery .swiper-flex {
     grid-template-columns: 100%;
@@ -317,6 +321,7 @@
   }
   .product-container section#single-product .product-details .product-title {
     text-align: center;
+    letter-spacing: -0.5px;
   }
   .product-container section#single-product .product-details .product-price {
     text-align: center;
@@ -324,6 +329,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .product-container section#single-product .product-gallery {
+    margin-bottom: 5rem;
+  }
   .product-container section#single-product .product-details {
     width: 90%;
   }

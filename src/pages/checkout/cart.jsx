@@ -75,15 +75,15 @@ const Cart = () => {
       {/* NAVBAR */}
       <Navbar marginBottom={"7rem"} />
       <section id="cart">
-        <h1>Cart</h1>
+        <h2>Cart</h2>
         {cartItems.length === 0 ? (
           <CartEmpty />
         ) : (
           <>
             <div className="cart-titles">
-              <h2 className="product-title">Product</h2>
-              <h2 className="quantity-title">Quantity</h2>
-              <h2 className="total-title">Total</h2>
+              <p className="product-title">Product</p>
+              <p className="quantity-title">Quantity</p>
+              <p className="total-title">Total</p>
             </div>
 
             {cartItems.length >= 1 && cartItems.map((eachItem, index) => (
@@ -97,7 +97,7 @@ const Cart = () => {
                   </div>
                   <div className="product-detail">
                     <p style={{ textTransform: "capitalize" }}>{eachItem.productTitle}</p>
-                    <p>
+                    <p style={{ textTransform: "capitalize" }}>
                       {eachItem.size && `${eachItem.size} / `}
                       {eachItem.goldColor && `${eachItem.goldColor}`}
                       {eachItem.stone && ` / ${eachItem.stone}`}

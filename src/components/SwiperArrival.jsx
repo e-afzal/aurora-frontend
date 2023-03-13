@@ -29,9 +29,7 @@ const SwiperArrival = ({ products }) => {
 
   // CURRENCY LOCALIZATION Function
   function localize(amount) {
-    console.log(amount);
-    const numeral = Number(amount);
-    return Intl.NumberFormat("en-AE", { style: "currency", currency: "AED" }).format(numeral);
+    return Intl.NumberFormat("en-AE", { style: "currency", currency: "AED" }).format(amount);
   }
 
   return (
@@ -47,7 +45,7 @@ const SwiperArrival = ({ products }) => {
         speed={1000}
         centeredSlides={centeredSlides}
       >
-        {products.map((product, index) => (
+        {products && products.map((product, index) => (
           <SwiperSlide key={index} style={{
             height: slideHeight,
             // marginLeft: "1rem", 

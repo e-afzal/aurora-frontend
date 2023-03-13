@@ -202,10 +202,10 @@ const Information = () => {
                 <section className="contact-info">
                   <div className="contact-head">
                     <h5>Contact Information</h5>
-                    <p>
+                    {/* <p>
                       Have an account?{" "}
                       <a href="/account/login">Log in</a>
-                    </p>
+                    </p> */}
                   </div>
                   <input
                     type="email"
@@ -354,7 +354,7 @@ const Information = () => {
                     </div>
                     <div className="product-description">
                       <p style={{ textTransform: "capitalize" }} className="product-title">{eachItem.productTitle}</p>
-                      <p className="product-size-color">
+                      <p className="product-size-color" style={{ textTransform: "capitalize" }}>
                         {eachItem.size && `${eachItem.size} / `}
                         {eachItem.goldColor && `${eachItem.goldColor}`}
                         {eachItem.stone && ` / ${eachItem.stone}`}

@@ -1,14 +1,14 @@
 section#cart {
   padding-inline: clamp(1.5rem, 5vw, 7rem);
-  max-width: 1366px;
+  max-width: 1350px;
   margin-inline: auto;
 }
-section#cart h1 {
-  font-size: clamp(3rem, 7vw, 3.8rem);
-  text-transform: uppercase;
-  letter-spacing: 3px;
+section#cart h2 {
   text-align: center;
-  margin-bottom: 2.8vw;
+  font-size: clamp(2.7rem, 5vw, 3.3rem);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 section#cart .cart-titles {
   display: grid;
@@ -16,19 +16,19 @@ section#cart .cart-titles {
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   padding-bottom: 1.2rem;
 }
-section#cart .cart-titles h2.product-title,
-section#cart .cart-titles h2.quantity-title,
-section#cart .cart-titles h2.total-title {
+section#cart .cart-titles p.product-title,
+section#cart .cart-titles p.quantity-title,
+section#cart .cart-titles p.total-title {
   font-family: "Avenir-Medium", sans-serif;
-  font-size: clamp(1.5rem, 5vw, 1.8rem);
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #404040;
 }
-section#cart .cart-titles h2.quantity-title {
+section#cart .cart-titles p.quantity-title {
   text-align: center;
 }
-section#cart .cart-titles h2.total-title {
+section#cart .cart-titles p.total-title {
   text-align: end;
 }
 section#cart .product {
@@ -103,6 +103,7 @@ section#cart
   padding: 0;
   background-color: #fff;
   color: #000;
+  font-size: 13.5px;
 }
 section#cart
   .product
@@ -171,6 +172,7 @@ section#cart .bottom .last-column .checkout-button button {
 @media screen and (max-width: 550px) {
   section#cart .product {
     grid-template-columns: 3fr 1fr;
+    margin-bottom: 3rem;
   }
   section#cart .product .product-details {
     grid-template-columns: 45% 55%;

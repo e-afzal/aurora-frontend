@@ -2,17 +2,31 @@ section#conditions {
   padding-inline: clamp(1.5rem, 5vw, 7rem);
 }
 section#conditions .condition {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
+section#conditions h2 {
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
 section#conditions .condition h3 {
   font-family: "Avenir-Medium", sans-serif;
   font-size: clamp(1.8rem, 2vw, 2rem);
-  font-size: 1.65rem;
+  font-size: clamp(1.4rem, 2vw, 1.65rem);
+  /* font-size: 1.65rem; */
   text-transform: uppercase;
   letter-spacing: 0.4px;
+  color: #000;
 }
 section#conditions .condition p {
   margin-top: 5px;
+  letter-spacing: 0px;
+  margin-bottom: 1rem;
+  color: #1c1b1b;
 }
 section#conditions .condition p:nth-child(2) {
   margin-top: 1rem;
@@ -29,4 +43,12 @@ section#conditions .condition ul li {
   font-size: clamp(1.45rem, 2.7vw, 1.7rem);
   font-family: "Avenir-Medium", sans-serif;
   margin-top: 5px;
+}
+
+@media screen and (min-width: 810px) {
+  section#conditions {
+    width: 67rem;
+    padding-inline: 0px;
+    margin-inline: auto;
+  }
 }
