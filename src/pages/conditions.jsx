@@ -61,7 +61,7 @@ const Conditions = () => {
     <>
       {/* SEO MARKUP */}
       <Helmet>
-        <title>Terms &amp; Conditions – Aurora Jewelry</title>
+        <title>Terms &amp; Conditions | Aurora Jewelry</title>
         <meta name="description" content="Aurora Jewely Terms and Conditions" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Aurora Jewelry Terms and Conditions" />

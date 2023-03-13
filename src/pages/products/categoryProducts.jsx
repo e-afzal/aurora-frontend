@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import '../../styles/singleCategory.css';
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // COMPONENTS
 import Navbar from '../../components/Navbar';
@@ -90,6 +91,14 @@ const CategoryProducts = () => {
   if (finalData !== null) {
     return (
       <>
+        <Helmet>
+          <title>{data.category.name} | Aurora Jewelry</title>
+          <meta property="og:title" content={`${data.category.name} | Aurora Jewelry`} />
+          <meta name="description" content={data.category.description} />
+          <meta property="og:description" content={data.category.description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={`https://aurorajewelry.ae/products/category/${data.category.name}`} />
+        </Helmet>
         <Navbar />
         <SearchFilter
           mode={"collection"}

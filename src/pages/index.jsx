@@ -31,13 +31,13 @@ const Home = () => {
     <>
       {/* SEO MARKUP */}
       <Helmet>
-        <title>Aurora Jewelry</title>
+        <title>Aurora Jewelry | Fine Jewelry</title>
         <meta name="description" content="Founded in Dubai 2019, Aurora Jewelry brings you nothing less than ordinary with its handmade timeless pieces." />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Aurora Jewelry" />
+        <meta property="og:title" content="Aurora Jewelry | Fine Jewelry" />
         <meta property="og:description" content="Founded in Dubai 2019, Aurora Jewelry brings you nothing less than ordinary with its handmade timeless pieces." />
         <meta property="og:url" content="https://aurorajewelry.ae/" />
-        <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0595/9286/7976/files/aurora-logo.png?height=628&amp;pad_color=ffffff&amp;v=1663492389&amp;width=1200" />
+        {/* <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0595/9286/7976/files/aurora-logo.png?height=628&amp;pad_color=ffffff&amp;v=1663492389&amp;width=1200" /> */}
       </Helmet>
 
       <Navbar />

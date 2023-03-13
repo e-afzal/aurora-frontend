@@ -52,7 +52,7 @@ const Contact = () => {
     <>
       {/* SEO MARKUP */}
       <Helmet>
-        <title>Contact – Aurora Jewelry</title>
+        <title>Contact | Aurora Jewelry</title>
         <meta property="og:type" content="website" />
         <meta name="description" content="Aurora Jewely Contact Form." />
         <meta property="og:title" content="Aurora Jewelry Contact Form" />

@@ -19,6 +19,8 @@ const SingleProduct = () => {
   const navigate = useNavigate("");
   const [productData, setProductData] = useState(null);
 
+  console.log(productData);
+
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products/${id}`).then(res => {
       setProductData({

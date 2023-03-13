@@ -2,6 +2,7 @@ import '../../styles/singleCollection.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // COMPONENT(S)
 import Navbar from '../../components/Navbar';
@@ -79,6 +80,14 @@ const CollectionProducts = () => {
   if (finalData.length > 0 && data !== null) {
     return (
       <>
+        <Helmet>
+          <title>{data.collection.name} collection | aurora jewelry</title>
+          <meta property="og:title" content={`${data.collection.name} collection | aurora jewelry`} />
+          <meta name="description" content={data.collection.description} />
+          <meta property="og:description" content={data.collection.description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={`https://aurorajewelry.ae/collections/${data.collection.name}`} />
+        </Helmet>
         <Navbar />
         <SearchFilter
           mode={"category"}

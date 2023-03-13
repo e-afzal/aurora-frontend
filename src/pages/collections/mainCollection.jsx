@@ -2,6 +2,7 @@ import '../../styles/mainCollection.css';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // COMPONENT(S)
 import Navbar from './../../components/Navbar';
@@ -30,6 +31,16 @@ const MainCollection = () => {
   if (data !== null) {
     return (
       <>
+        <Helmet>
+          <title>Fine Jewelry | Aurora Jewelry</title>
+          <meta name="description" content={data.mainJewelry.description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Aurora Jewelry | Fine Jewelry" />
+          <meta property="og:description" content={data.mainJewelry.description} />
+          <meta property="og:url" content="https://aurorajewelry.ae/collections/main/fine-jewelry" />
+          {/* <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0595/9286/7976/files/aurora-logo.png?height=628&amp;pad_color=ffffff&amp;v=1663492389&amp;width=1200" /> */}
+        </Helmet>
+
         <Navbar />
         <div id="collection-container">
           {/* DESCRIPTION SECTION */}

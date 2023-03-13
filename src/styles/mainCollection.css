@@ -1,13 +1,20 @@
 div#collection-container {
+  max-width: 1350px;
+  margin-inline: auto;
   padding-inline: clamp(1.5rem, 5vw, 7rem);
   padding-block: 5rem;
 }
 div#collection-container h1.collection-heading {
-  text-transform: capitalize;
+  font-family: "cormorant-medium", serif;
+  font-weight: 100;
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
+  text-transform: uppercase;
   letter-spacing: 0.55px;
   text-align: center;
 }
 div#collection-container h5.collection-caption {
+  font-family: "Avenir-Medium", sans-serif;
+  font-size: 14.5px;
   text-align: center;
   text-transform: capitalize;
   margin-top: 3px;
@@ -34,12 +41,14 @@ div#collection-container section#shopCategory {
 }
 div#collection-container section#shopCollection h2.shop-heading,
 div#collection-container section#shopCategory h2.shop-heading {
+  font-size: clamp(2.45rem, 5vw, 2.9rem);
   text-transform: capitalize;
   text-align: center;
+  letter-spacing: 0px;
 }
 div#collection-container section#shopCollection p.shop-description,
 div#collection-container section#shopCategory p.shop-description {
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   text-align: center;
   padding-inline: clamp(3rem, 10vw, 15rem);
 }
